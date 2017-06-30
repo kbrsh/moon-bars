@@ -129,7 +129,7 @@
 						attrs: {
 							transform: "translate(0, " + gridHeight + ") scale(1, -1)"
 						}
-					}, {shouldRender: true}, rects)]);
+					}, {shouldRender: true, isSVG: true}, rects)]);
 				}
 			});
 		}
