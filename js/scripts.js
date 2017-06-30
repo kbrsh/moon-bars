@@ -13,7 +13,7 @@ var stringifyIntArray = function(arr) {
 var stringifyStringArray = function(arr) {
 	var code = "['" + arr[0] + "'";
 
-	for(var i = 0; i < arr.length; i++) {
+	for(var i = 1; i < arr.length; i++) {
 		code += ", '" + arr[i] + "'";
 	}
 
