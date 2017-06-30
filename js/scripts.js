@@ -29,9 +29,17 @@ Moon.component("sample", {
 });
 
 var data = new Array(12);
+var current = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
+data[0] = current;
 
-for(var i = 0; i < 12; i++) {
-	data[i] = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
+for(var i = 1; i < 12; i++) {
+	var flip = Math.random();
+
+	if((flip < 0.5 || current === 1) && (current !== 10)) {
+		data[i] = ++current;
+	} else if((flip > 0.5 || current === 10) && (current !== 1)) {
+		data[i] = --current;
+	}
 }
 
 var fills = [["#3ac7ff", "#9a0ace"], ["#54ffe8", "#474aff"], ["#fc53e8", "#ff9e5e"]]
