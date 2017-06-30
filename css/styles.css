@@ -1,0 +1,71 @@
+body {
+	background: #111111;
+}
+
+h1 {
+	font-weight: 200;
+	color: #F5F5F5;
+}
+
+pre {
+	margin-top: 3rem;
+}
+
+pre code {
+	background: #1e1e1e;
+  font-family: "Inconsolata", monospace;
+  position: relative;
+  border: none;
+  font-size: 1.2rem;
+  color: #FEFEFE;
+}
+
+.tag {
+  color: #00A2CD;
+}
+
+.string {
+  color: #02C1A7;
+}
+
+
+/* === Footer === */
+footer {
+	position: absolute;
+	margin: 5rem;
+}
+
+#footer-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#footer-name, #footer-madeby {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#footer-madeby {
+  font-weight: 200;
+}
+
+#footer-name {
+  font-weight: 700;
+}
+
+#footer-desc {
+	font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
+#footer-logo {
+	height: 75px;
+	width: 75px;
+	border-radius: 10px;
+}
+
+#footer-link {
+	color: #f5f5f5;
+	text-decoration: none;
+}
