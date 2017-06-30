@@ -1,0 +1,14 @@
+{
+  "name": "moon-bars",
+  "version": "0.1.0",
+  "description": "Sleek bar graphs for Moon",
+  "main": "dist/moon-bars.min.js",
+  "scripts": {
+    "build": "node ./build/build.js"
+  },
+  "author": "Kabir Shah",
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^3.0.22"
+  }
+}
