@@ -34,10 +34,12 @@ for(var i = 0; i < 12; i++) {
 	data[i] = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
 }
 
+var fills = [["#3ac7ff", "#9a0ace"], ["#54ffe8", "#474aff"], ["#fc53e8", "#ff9e5e"]]
+
 new Moon({
 	el: "#app",
 	data: {
 		data: data,
-		fill: ["#7bddd3", "#079af9"]
+		fill: fills[Math.floor(Math.random() * fills.length)]
 	}
 });
