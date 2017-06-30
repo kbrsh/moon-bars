@@ -1,6 +1,6 @@
 {
   "name": "moon-bars",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sleek bar graphs for Moon",
   "main": "dist/moon-bars.min.js",
   "scripts": {
