@@ -104,8 +104,7 @@
 							width: rectWidth,
 							fill: fill,
 							rx: 5,
-							ry: 5,
-							transform: "translate(0, " + (gridHeight - height) + ")"
+							ry: 5
 						}}, {shouldRender: true, isSVG: true}, [
 							h("title", {attrs: {}}, {shouldRender: true, isSVG: true}, [
 								h("#text", {shouldRender: true}, number)
@@ -132,7 +131,11 @@
 							viewBox: "0 0 " + gridWidth + " " + gridHeight,
 							xmlns: "http://www.w3.org/2000/svg"
 						}
-					}, {shouldRender: true, isSVG: true}, rects);
+					}, {shouldRender: true, isSVG: true}, h("g", {
+						attrs: {
+							transform: "translate(0, " + gridHeight + ") scale(1, -1)"
+						}
+					}, {shouldRender: true}, rects));
 				}
 			});
 		}
