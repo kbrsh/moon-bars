@@ -31,8 +31,8 @@ Then, use the component within any element with a wrapping Moon instance.
   m-literal:data="[5, 7, 4, 3, 5]"
   m-literal:fill="['#7bddd3', '#079af9']"
   height="100"
-  width="300"
-  ></bars>
+  width="300">
+</bars>
 ```
 
 ##### Props
