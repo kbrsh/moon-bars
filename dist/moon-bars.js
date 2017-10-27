@@ -16,7 +16,7 @@
 			return section;
 		}
 	}
-    
+
 	var MoonBars = {
 		init: function(Moon) {
 			Moon.component("bars", {
@@ -115,7 +115,7 @@
 									attributeName: "height",
 									from: 0,
 									to: height,
-									dur: ".3s",
+									dur: "0.3s",
 									repeatCount: 1
 								}
 							}, {shouldRender: true, isSVG: true}, [])
